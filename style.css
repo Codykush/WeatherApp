@@ -1,0 +1,44 @@
+.box {
+    width: 400px;
+    height: 500px;
+    background-color: #f1f3f4;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(45, 45, 49, 0.655);
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+   
+  
+}
+.maincontainer {
+      display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    size : 30px;
+}
+.container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1%;
+  
+}
+.logo{
+    size: 200px;
+    width: 200px;
+    height: 200px;
+    margin-top: 1px;    
+    shao
+
+    
+  
+}
