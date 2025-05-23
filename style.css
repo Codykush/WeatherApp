@@ -1,44 +1,127 @@
-.box {
-    width: 400px;
-    height: 500px;
-    background-color: #f1f3f4;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 8px rgba(45, 45, 49, 0.655);
-    padding: 20px;
-    border-radius: 10px;
-    align-items: center;
-   
-  
+/* ===== General Styling ===== */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #4b8798;
+  font-family: Arial, sans-serif;
+  color: white;
+  height: 100vh;
+  position: relative;
 }
-.maincontainer {
-      display: flex;
-    justify-content: center;
-   
-    align-items: center;
-    height: 100vh;
-}
-.header {
-    display: flex;
-    justify-content: center;
-    size : 30px;
-}
-.container {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 1%;
-  
-}
-.logo{
-    size: 200px;
-    width: 200px;
-    height: 200px;
-    margin-top: 1px;    
-    shao
 
-    
-  
+/* ===== Cloud Animation Background ===== */
+.clouds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300%;
+  background: url('clouds.png.png') repeat-x;
+  background-size: contain;
+  animation: animateClouds 60s linear infinite;
+  opacity: 0.1; /* Subtle effect */
+  z-index: 0;
+}
+
+@keyframes animateClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ===== Weather App Content ===== */
+.maincontainer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.header {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(to bottom, #0498cdbb, #f4c999);
+  box-shadow: 0px 0px 30px white;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 70px;
+  margin: 0 auto;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(54, 48, 48, 0.5);
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background: #efefef;
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.search button {
+  border: none;
+  background: #ebefef;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+}
+
+.search button img {
+  width: 20px;
+  height: 20px;
+}
+
+.weather-info h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.weather-info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.extra-info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  color: white;
+}
+
+.extra-info div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }

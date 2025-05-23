@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="mainContainer">
-        <div class="container">
-            <div>Weather App</div>
-            <div class="box">
-                <img src="/Weather.png" alt="logo" class="logo">
-            </div>
+  <div class="clouds"></div>
+
+  <div class="maincontainer">
+    <h1 class="header">Weather App</h1>
+    <div class="box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" class="logo" alt="Weather Icon" />
+
+      <div class="search">
+        <input type="text" placeholder="Enter City Name"
+        spellcheck="false">
+        <button>
+          <img src="https://cdn-icons-png.flaticon.com/512/751/751463.png" alt="Search Icon" />
+        </button>
+      </div>
+
+      <div class="weather-info">
+
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">New York</h2>
+
+        <div class="extra-info">
+          <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/728/728093.png" width="25" alt="Humidity Icon" />
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          
+          </div>
+          <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/860/860825.png" width="25" alt="Wind Icon" />
+            <p class="wind">15km/h</p>
+            <p>Wind Speed</p>
+           
+          </div>
         </div>
+      </div>
     </div>
-    
+  </div>
+
+  <script src="/script.js"></script>
 </body>
 </html>
